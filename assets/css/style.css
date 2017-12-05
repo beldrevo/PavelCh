@@ -8,8 +8,17 @@ body, html {
     line-height: 1.8;
 }
 
+div.w3-display-bottommiddle {
+    margin-bottom: 150px;
+}
+
+img#logo {
+    width: 400px;
+    margin: 0;
+}
+
 div#myNavbar i.links {
-    font-size: 24px;
+    font-size: 22px;
 }
 
 /* Create a Parallax Effect */
@@ -22,7 +31,7 @@ div#myNavbar i.links {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url('../images/DSC0148.JPG');
+    background-image: url('../images/DSC0142.JPG');
     min-height: 100%;
 }
 
