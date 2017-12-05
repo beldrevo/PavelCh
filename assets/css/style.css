@@ -8,6 +8,10 @@ body, html {
     line-height: 1.8;
 }
 
+div#myNavbar i.links {
+    font-size: 24px;
+}
+
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: fixed;
@@ -40,6 +44,38 @@ body, html {
 
 .w3-hover-opacity {
     cursor: pointer;
+}
+
+div#interests {
+    /*padding-left: 20px;*/
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;*/
+}
+
+div#interests ul {
+    list-style: none;
+    padding: 0;
+}
+
+#interests p {
+    display: inline;
+    padding-bottom: 10px;
+    /*border-bottom: 1px solid #dddddd;*/
+}
+
+#interests ul li {
+    margin-top: 5px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer i.links {
+    font-size: 40px;
+    padding: 5px;
 }
 
 /* Turn off parallax scrolling for tablets and phones */
