@@ -9,7 +9,7 @@ body, html {
 }
 
 div.w3-display-bottommiddle {
-    margin-bottom: 150px;
+    margin-bottom: 180px;
 }
 
 img#logo {
@@ -53,6 +53,14 @@ div#myNavbar i.links {
 
 .w3-hover-opacity {
     cursor: pointer;
+}
+
+div.w3-content.w3-container.w3-padding-64 {
+    padding: 40px 20px!important;
+}
+
+div#about p {
+    text-align: justify;
 }
 
 div#interests {
