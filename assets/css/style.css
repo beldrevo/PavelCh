@@ -60,7 +60,7 @@ div.w3-content.w3-container.w3-padding-64 {
 }
 
 div#about p {
-    text-align: justify;
+    text-align: justify;    
 }
 
 div#interests {
@@ -84,6 +84,49 @@ div#interests ul {
 
 #interests ul li {
     margin-top: 5px;
+}
+
+div.w3-row.projects {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.w3-card-2 {
+    width: 450px;
+    height: auto;
+    margin: 10px;
+    font-size: 12px;
+}
+
+div.w3-card-2 img {
+    width: 100px;
+    height: auto;
+    margin: 30px 0;
+}
+
+div#gotta-go {
+    background-color: #393f60;
+    width: 100%;
+    height: auto;
+}
+
+.bold {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+div#mart-studio img {
+    width: 350px;
+    height: auto;
+    margin: 0;
+}
+
+div#drevo img {
+    width: 200px;
+    height: auto;
+    margin: 0;
 }
 
 footer a {
