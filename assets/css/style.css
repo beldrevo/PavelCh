@@ -8,12 +8,8 @@ body, html {
     line-height: 1.8;
 }
 
-div.w3-display-bottommiddle {
-    margin-bottom: 180px;
-}
-
 img#logo {
-    width: 400px;
+    width: 100%;
     margin: 0;
 }
 
@@ -31,7 +27,7 @@ div#myNavbar i.links {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url('../images/DSC0142.JPG');
+    background-image: url('../images/DSC0148.JPG');
     min-height: 100%;
 }
 
