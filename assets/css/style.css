@@ -52,7 +52,7 @@ div#myNavbar i.links {
 }
 
 div.w3-content.w3-container.w3-padding-64 {
-    padding: 40px 20px!important;
+    /*padding: 40px 20px!important;*/
 }
 
 div#about p {
@@ -138,5 +138,14 @@ footer i.links {
 @media only screen and (max-device-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
         background-attachment: scroll;
+    }
+}
+
+@media only screen and (max-device-width: 736px) {
+    .w3-row.projects.w3-center {
+        width: 100%;
+    }
+    .w3-card-2 {
+        width: 100%;
     }
 }

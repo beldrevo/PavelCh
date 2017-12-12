@@ -1,2 +1,2 @@
-## My Portfolio website repo. You can read my bio and see my works.
-### Built with pure HTML and CSS, used W3 library.
+## My Portfolio website repo. 
+Built with pure HTML, CSS and Javascript, used W3.CSS library.
