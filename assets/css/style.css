@@ -1,3 +1,28 @@
+/*font-family: 'Slabo 27px', serif;
+font-family: 'Indie Flower', cursive;
+font-family: 'Spectral SC', serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Amatic SC', cursive;
+font-family: 'Poiret One', cursive;
+font-family: 'Cinzel', serif;
+font-family: 'Righteous', cursive;
+font-family: 'Concert One', cursive;
+font-family: 'Philosopher', sans-serif;
+font-family: 'Julius Sans One', sans-serif;
+font-family: 'Jura', sans-serif;
+font-family: 'Cabin Sketch', cursive;
+font-family: 'Antic Slab', serif;
+font-family: 'Rock Salt', cursive;
+font-family: 'Special Elite', cursive;
+font-family: 'Syncopate', sans-serif;
+font-family: 'Marcellus SC', serif;
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'Coming Soon', cursive;
+font-family: 'Nixie One', cursive;
+font-family: 'Caudex', serif;
+font-family: 'Wire One', sans-serif;*/
+
 body,h1,h2,h3,h4,h5,h6 {
     font-family: "Lato", sans-serif;
 }
@@ -8,9 +33,23 @@ body, html {
     line-height: 1.8;
 }
 
-img#logo {
+div.w3-display-middle {
+    text-align: center;
+}
+
+#logo-div {
+    opacity: 0.7;
+    background-color: white;
+}
+
+h3#logo {
+    padding: 0 40px;
     width: 100%;
     margin: 0;
+    color: black;
+    font-size: 50px;
+    /*font-weight: bold;*/
+    font-family:  'Poiret One', cursive;
 }
 
 div#myNavbar i.links {
@@ -27,20 +66,24 @@ div#myNavbar i.links {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url('../images/DSC0148.JPG');
-    min-height: 100%;
+    background-image: url('../images/DSC7792.JPG');
+    min-height: 90%;
+}
+
+.w3-opacity-min {
+    opacity: 0.9;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-    background-image: url("../images/DSC0061.JPG");
-    min-height: 400px;
+    background-image: url("../images/IMG_20170413_152548031_HDR.JPG");
+    min-height: 500px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-    background-image: url("../images/DSC0175.JPG");
-    min-height: 400px;
+    background-image: url("../images/DSC8003.JPG");
+    min-height: 500px;
 }
 
 .w3-wide {
@@ -51,20 +94,8 @@ div#myNavbar i.links {
     cursor: pointer;
 }
 
-div.w3-content.w3-container.w3-padding-64 {
-    /*padding: 40px 20px!important;*/
-}
-
 div#about p {
     text-align: justify;    
-}
-
-div#interests {
-    /*padding-left: 20px;*/
-    /*display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;*/
 }
 
 div#interests ul {
@@ -75,54 +106,130 @@ div#interests ul {
 #interests p {
     display: inline;
     padding-bottom: 10px;
-    /*border-bottom: 1px solid #dddddd;*/
+    border-bottom: 1px solid #dddddd;
 }
 
 #interests ul li {
     margin-top: 5px;
 }
 
-div.w3-row.projects {
+div.w3-card-2 {
+    width: 90%;
     display: inline-flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-div.w3-card-2 {
-    width: 450px;
     height: auto;
-    margin: 10px;
+    margin-bottom: 20px;
     font-size: 12px;
 }
 
+div.card-info p {
+    margin: 0 0 10px 0;
+}
+
+div.card-info a {
+    text-decoration: none;
+    color: #1a79f8;
+    padding: 0 30px;
+}
+
 div.w3-card-2 img {
-    width: 100px;
+    width: 150px;
     height: auto;
-    margin: 30px 0;
+    margin: 10px 0 20px 0;
 }
 
 div#gotta-go {
+    padding: 20px;
     background-color: #393f60;
-    width: 100%;
+    width: 35%;
     height: auto;
+    margin: 0;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.bold {
-    font-weight: 700;
-    font-size: 14px;
+p.bold {
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+div.card-info {
+    width: 65%;
+    padding: 20px 20px 0 20px;
+    font-size: 1rem;
+    text-align: left;
+}
+
+div.links {
+    width: 100%;
+    margin-bottom: 10px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 div#mart-studio img {
-    width: 350px;
+    width: 320px;
+    height: auto;
+    margin: 60px 0;
+}
+
+div#mart-studio {
+    width: 35%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div#unmute img {
+    width: 300px;
+}
+
+div#unmute, div#react-scrapper {
+    width: 35%;
+    padding-top: 40px;
+}
+
+div#react-scrapper h1 {
+    font-family: 'Lora', serif;
+    margin: 0;
+}
+
+div.w3-cards-4 {
+    display: inline-flex;
+    flex-direction: column;
+    font-size: 1rem;
+    width: 33%;
+}
+
+div#games {
+    width: 90%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.games-card-info a {
+    text-decoration: none;
+    color: #777;
+    padding: 0 10px;
+}
+
+div.games-card-info {
+    padding: 10px;
+}
+
+div#hangman img {
+    width: 100%;
     height: auto;
     margin: 0;
 }
 
-div#drevo img {
-    width: 200px;
-    height: auto;
-    margin: 0;
+div#crystal-collector img {
+    width: 40%;
 }
 
 footer a {

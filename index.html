@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Antic+Slab|Cabin+Sketch:400,700|Caudex:400,700|Cinzel+Decorative:400,700|Cinzel:400,700|Coming+Soon|Concert+One|Cormorant+Garamond:300,400,500,700|Indie+Flower|Julius+Sans+One|Jura:400,700|Marcellus+SC|Nixie+One|Philosopher:400,700|Poiret+One|Quicksand:400,700|Righteous|Rock+Salt|Slabo+27px|Special+Elite|Spectral+SC:200,300,400,500,700|Syncopate:400,700|Wire+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
  </head>
 <body>
 
@@ -38,8 +40,9 @@
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <img id="logo" src="./assets/images/logo_2.jpg" class="w3-round w3-image w3-opacity" alt="logo">
+  <div id='logo-div' class="w3-display-middle" style="white-space:nowrap;">
+    <h3 id="logo" class="w3-round w3-image w3-opacity" >Pavel Ch. portfolio</h3>
+    <!-- <img id="logo" src="./assets/images/logo_2.jpg" class="w3-round w3-image w3-opacity" alt="logo"> -->
   </div>
 </div>
 
@@ -47,7 +50,7 @@
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">ABOUT ME</h3>
   <!-- <p class="w3-center"><em></em></p> -->
-  <p>Hi, my name is Pavel (Slavic version of name Paul). I'm a Full Stack Web Developer with a background in software testing. Enjoy building interesting projects, picking up new technologies and exploring the JavaScript ecosystem. Managing my own company (non Tech) in past gave me an excelent experience in time and tasks management, finding best ways to collaborate, and prioritise the job.  </p>
+  <p>Hi, my name is Pavel (Slavic version of name Paul). I'm a Full Stack Web Developer with a background in software testing. Enjoy building interesting projects, picking up new technologies and exploring the JavaScript ecosystem. Managing my own company (non Tech) in a past gave me an excelent experience in time and tasks management, finding best ways to collaborate, and prioritise the job.  </p>
   <div class="w3-row">
     <div class="w3-col m6 w3-center">
       <!-- <p><b>Pavel Ch</b></p><br> -->
@@ -56,7 +59,7 @@
 
       <!-- Hide this text on small devices -->
     <div id="interests" class="w3-col m6 w3-hide-small">
-      <p>My interests (besides the coding): </p>
+      <p>My interests (besides coding): </p>
       <ul>
         <li>new technologies and products</li>
         <li>travelling and geography</li>
@@ -80,24 +83,20 @@
   </div> -->
 </div>
 
-<div class="w3-row w3-center w3-dark-grey w3-padding-16">
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">12+</span><br>
-    Partners
-  </div>
+<!-- <div class="w3-row w3-center w3-dark-grey w3-padding-16">
   <div class="w3-quarter w3-section">
     <span class="w3-xlarge">15+</span><br>
     Projects Done
   </div>
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">200+</span><br>
+    <span class="w3-xlarge">300+</span><br>
     Pull requests
   </div>
   <div class="w3-quarter w3-section">
     <span class="w3-xlarge">100+</span><br>
     Meetings
   </div>
-</div>
+</div> -->
 
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
@@ -107,24 +106,27 @@
 </div>
 
 <!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
+<div class="w3-content w3-padding-64" id="portfolio">
   <h3 class="w3-center">MY PROJECTS</h3>
-  <p class="w3-center"><em>Here are some of my latest works. Several of them still in a process of development.</em></p><br>
+  <h5 class="w3-center">Here are some of my latest works. Several of them still in a process of development.</h5><br>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row projects w3-center">
     <div class="w3-card-2">
       <div id="gotta-go">
         <img src="assets/images/transp-gotta-go.png" alt="Gotta Go">
+        <p class="bold">The crowdsourced mobile web application for people who drive a lot and need a restroom. </p>
+        <p class="bold">Built with React.</p>
       </div>
-      <div class="w3-container w3-center">
-        <p class="bold">The crowdsourced mobile application for people who drive a lot.</p>
-        <p>Drivers for services like Uber or Lyft sometimes need to find restrooms quick in areas they don't know very well. This is where Gotta Go comes in!</p>
-        <p>This application was created as a group project for the UC Berkeley Extension Coding Boot Camp</p>
-        <p>Main features: user authentication, list/map views, add new location, leave comments, rate, google maps functionality (markers, routing, distance)</p>
-        <p>Technologies/tools used: HTML, CSS, Bulma, EJS, JQuery, MySQL, Sequelize, Passport, Express, Google Maps API, Node.js, npm, Git/Github, Trello, Slack</p>
-        <p>Live version: <a href="https://murmuring-basin-97486.herokuapp.com/" target="_blank">lives here</a></p>
-        <p>Github: <a href="https://github.com/anlawyer/GottaGo" target="_blank">code lives here</a></p>
+      <div class="card-info">
+        <p>Drivers for services like Uber or Lyft often need to quick find a restroom in areas they don't know very well. This is where Gotta Go comes in! We devided all spots on three categories: public, restaurants, gas stations. Logged in users can add new location to database, leave comments, update account. Unregistered users can use aplication in view mode. 
+        </p>
+        <p>Technologies/tools used: HTML, CSS, Bloomer, React, Google Maps API, Mongoose, Passport, Express, Node.js, npm, Git/Github, Heroku, Trello, Slack</p>
+        <p>This application was created as a group project team of four devs for the UC Berkeley Extension Coding Boot Camp. Using React Native we are continuing build Native iOS/Android versions of the app. </p>
+        <div class="links">
+          <a href="https://murmuring-basin-97486.herokuapp.com/" target="_blank">Website</a>
+          <a href="https://github.com/mford008/gotta-go-react" target="_blank">Github</a>
+        </div>
       </div>
     </div>
 
@@ -132,54 +134,93 @@
       <div id="mart-studio">
         <img src="assets/images/logo-mart.png" alt="MART studio">
       </div>
-      <div class="w3-container w3-center">
-        <p class="bold">Website for Mart STUDIO art school.</p>
-        <p>Technologies/tools used: HTML, CSS, Bootstrap 4, Javascript, Github</p>
-        <p>Live version: <a href="https://martstudioartschool.com" target="_blank">lives here</a></p>
-        <p>Github: <a href="https://github.com/beldrevo/MARTstudio" target="_blank">code lives here</a></p>
+      <div class="card-info" style="background-color: #f7f6f6; width: auto; padding-top: 40px">
+        <p>Website created for Mart STUDIO art school. </p>
+        <p>Technologies/tools used: HTML, CSS, Bootstrap 4, Javascript, Git/Github, Github Pages</p>
+        <p>My solo project. Still in development.</p>
+         <div class="links">
+          <a href="http://martstudioartschool.com/" target="_blank">Website</a>
+          <a href="https://github.com/beldrevo/MARTstudio" target="_blank">Github</a>
+        </div>
       </div>
     </div>
 
     <div class="w3-card-2">
       <div id="unmute">
-        <img src="img_fjords.jpg" alt="Unmute">
+        <img src="assets/images/Unmute.jpg" alt="Unmute">
       </div>
-      <div class="w3-container w3-center">
-        <p class="bold">Music Artists Web application which uses different types of API for collecting all usefull information about your favorite Artist in one place. </p>
-        <p>This application was created as a group project for the UC Berkeley Extension Coding Boot Camp</p>
-        <p>Main features: user authentication, Music Artists search engine, add/remove Artist to/from favorite, buy tickets, get Artist's social networks links</p>
-        <p>Technologies/tools used: HTML, CSS, Bootstrap 3, JQuery, Ajax, API, Firebase, Javascript, Git/Github, Slack</p>
-        <!-- <p>Live version: <a href="#" target="_blank">lives here</a></p> -->
-        <p>Github: <a href="https://github.com/mattcarpowich1/Project1" target="_blank">code lives here</a></p>
-      </div>
-    </div>
-
-    <div class="w3-card-2">
-      <div id="drevo">
-        <img src="" alt="news-scrapper">
-      </div>
-      <div class="w3-container w3-center">
-        <p class="bold">News Scrapper</p>
-        <!-- <p>Technologies/tools used: HTML, CSS, W3.CSS, Javascript, Git/Github</p> -->
-       <!--  <p>Live version: <a href="https://github.com/beldrevo/beldrevo.by" target="_blank">lives here</a></p> -->
-        <p>Github: <a href="https://github.com/beldrevo/react-search" target="_blank">code lives here</a></p>
+      <div class="card-info" style="background-color: #e8f3ff;">
+        <p>Have you ever struggle trying to find information about your favorite Music Artist/Band? Bio, upcoming concerts and tickets, Top Songs and Top Albums, social accounts, awards - a lot of resources.
+        </p>
+        <p>We used different types of APIs to collect all this data in one place. This web based application was created as a group project for the UC Berkeley Extension Coding Boot Camp. </p>
+        <p>Technologies/tools used: HTML, CSS, Bootstrap 3, jQuery, Ajax, API, Firebase, Javascript, Git/Github, Slack</p>
+        <div class="links">
+          <a href="" target="_blank">Website</a>
+          <a href="https://github.com/mattcarpowich1/Project1" target="_blank">Github</a>
+        </div>
       </div>
     </div>
 
     <div class="w3-card-2">
-      <img src="img_fjords.jpg" alt="Hangman game">
-      <div class="w3-container w3-center">
-        <p class="bold">Simple Hangman game.</p>
-        <p>Created with Javascript.</p>
+      <div id="react-scrapper" style="background-color: #524949; color: #f9f9f9">
+        <h1>News</h1>
+        <h1>Scrapper</h1>
+      </div>
+      <div class="card-info">
+        <p>News Scrapper</p>
+        <p>React Web application, built with MERN (Mongo, Express, React, Node) stuck. It allows search for news, save, comment, remove news articles. It uses NY Times API.</p>
+        <p>Technologies/tools used: HTML, CSS, Bootstrap, React, Mongoose, Express, Node.js, Git/Github</p>
+        <div class="links">
+          <a href="https://github.com/beldrevo/react-search" target="_blank">Website</a>
+          <a href="https://github.com/beldrevo/react-search" target="_blank">Github</a>
+        </div>
       </div>
     </div>
 
-    <div class="w3-card-2">
-      <img src="img_fjords.jpg" alt="Node app">
-      <div class="w3-container w3-center">
-        <p class="bold">Node application</p>
+    <h3>Simple funny games :)</h3>
+
+    <div id="games">
+      <div class="w3-card-4" style="width: 33%;">
+        <div id="hangman">
+          <img src="assets/images/hangman_logo.jpg" alt="Hangman game">
+        </div>
+        <div class="games-card-info">
+          <p>Simple Hangman game.</p>
+          <p>Created with pure Javascript, HTML and CSS. Inspired by Kids.</p>
+          <div class="links">
+            <a href="https://beldrevo.github.io/Hangman-Game/" target="_blank">Website</a>
+            <a href="https://github.com/beldrevo/Hangman-Game" target="_blank">Github</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-card-4" style="width: 33%;">
+        <h2>Trivia Game</h2>
+        <div class="games-card-info">
+          <p>Classic Trivia Game. Moon Landing theme.</p>
+          <p>Front end web application, built with HTML, CSS, Javascript, jQuery</p>
+          <div class="links">
+            <a href="https://beldrevo.github.io/TriviaGame/" target="_blank">Website</a>
+            <a href="https://github.com/beldrevo/TriviaGame" target="_blank">Github</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-card-4" style="width: 33%;">
+        <div id="crystal-collector">
+          <img src="assets/images/Topaz-icon.png" alt="Crystal Collector">
+          <h5>Crystal Collector</h5>
+        </div>
+        <div class="games-card-info">
+          <p>Simple crystal collector game. Bult with HTML, CSS, Javascript, jQuery</p>
+          <div class="links">
+            <a href="https://beldrevo.github.io/Crystal-Collector" target="_blank">Website</a>
+            <a href="https://github.com/beldrevo/Crystal-Collector" target="_blank">Github</a>
+          </div>
+        </div>
       </div>
     </div>
+   </div>
   </div>
 </div>
 
