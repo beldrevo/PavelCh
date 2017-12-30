@@ -23,6 +23,7 @@
     <a href="#about" class="w3-bar-item w3-button w3-hide-small">ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small">PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small">CONTACT</a>
+    <a href="resume.html" class="w3-bar-item w3-button w3-hide-small">RESUME</a>
     <div class="w3-hide-small">
       <a href="https://www.facebook.com/profile.php?id=100010761756834"><i class="fa fa-facebook-official w3-bar-item w3-button w3-right links"></i>
       <a href="https://github.com/beldrevo"><i class="fa fa-github w3-bar-item w3-button w3-right links"></i>
@@ -35,6 +36,7 @@
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+     <a href="resume.html" class="w3-bar-item w3-button">RESUME</a>
   </div>
 </div>
 
@@ -42,18 +44,15 @@
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div id='logo-div' class="w3-display-middle" style="white-space:nowrap;">
     <h3 id="logo" class="w3-round w3-image w3-opacity" >Pavel Ch. portfolio</h3>
-    <!-- <img id="logo" src="./assets/images/logo_2.jpg" class="w3-round w3-image w3-opacity" alt="logo"> -->
   </div>
 </div>
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">ABOUT ME</h3>
-  <!-- <p class="w3-center"><em></em></p> -->
   <p>Hi, my name is Pavel (Slavic version of name Paul). I'm a Full Stack Web Developer with a background in software testing. Enjoy building interesting projects, picking up new technologies and exploring the JavaScript ecosystem. Managing my own company (non Tech) in a past gave me an excelent experience in time and tasks management, finding best ways to collaborate, and prioritise the job.  </p>
   <div class="w3-row">
     <div class="w3-col m6 w3-center">
-      <!-- <p><b>Pavel Ch</b></p><br> -->
       <img src="assets/images/DSC_0022.JPG" class="w3-round w3-image w3-hover-opacity-off" alt="Photo of Me" width="400" height="auto" style="float: left;">
     </div>
 
@@ -68,35 +67,7 @@
       </ul>
     </div>
   </div>
-  <!-- <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-  <p class="w3-wide"><i class="fa fa-camera"></i>Web Development</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">80%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-photo"></i>Soccer</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
-  </div> -->
 </div>
-
-<!-- <div class="w3-row w3-center w3-dark-grey w3-padding-16">
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">15+</span><br>
-    Projects Done
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">300+</span><br>
-    Pull requests
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">100+</span><br>
-    Meetings
-  </div>
-</div> -->
 
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
@@ -284,7 +255,7 @@
     <a href="https://www.linkedin.com/in/pavel-ch/"><i class="fa fa-linkedin w3-hover-opacity links"></i>
   </div>
   <div>
-    <p>Created with W3.CSS framework</p>
+    <p>Created with W3.CSS library</p>
   </div>
 </footer>
  
@@ -303,14 +274,6 @@ function myMap() {
   var marker = new google.maps.Marker({position: myCenter});
 
   marker.setMap(map);
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
 }
 
 // Change style of navbar on scroll
