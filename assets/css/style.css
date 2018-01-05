@@ -92,7 +92,7 @@ div.w3-card-2 {
     width: 90%;
     display: inline-flex;
     flex-direction: row;
-    height: auto;
+    height: 350px;
     margin-bottom: 20px;
     font-size: 12px;
 }
