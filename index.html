@@ -41,8 +41,8 @@
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div id='logo-div' class="w3-display-middle" style="white-space:nowrap;">
-    <h3 id="logo" class="w3-round w3-image w3-opacity" >Pavel Ch. portfolio</h3>
+  <div id="logo-div" class="w3-display-middle" style="white-space:nowrap;">
+    <h3 id="logo" class="w3-opacity">Pavel Ch. portfolio</h3>
   </div>
 </div>
 
@@ -80,19 +80,21 @@
   <h3 class="w3-center">MY PROJECTS</h3>
   <h5 class="w3-center">Here are some of my latest works and projects I contributed in. Several of them still in a process of development.</h5><br>
 
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row projects w3-center">
     <div class="w3-card-2">
-      <div id="gotta-go">
-        <img src="assets/images/transp-gotta-go.png" alt="Gotta Go">
-        <p class="bold">The crowdsourced mobile web application for people who drive a lot and need a restroom. </p>
-        <p class="bold">Built with React.</p>
+      <div class="logo-block" style="background-color: #393f60;">
+        <img class="logo-image" src="assets/images/transp-gotta-go.png" alt="Gotta Go">
+          <p class="bold">The crowdsourced mobile web application for people who drive a lot. </p>
+          <p class="bold">Built with React.</p>
       </div>
-      <div class="card-info">
-        <p>Drivers for services like Uber or Lyft often need to quick find a restroom in areas they don't know very well. This is where Gotta Go comes in! We devided all spots on three categories: public, restaurants, gas stations. Logged in users can add new location to database, leave comments, update account. Unregistered users can use aplication in view mode.
-        </p>
-        <p>Technologies/tools used: HTML, CSS, Bloomer, React, Google Maps API, Mongoose, Passport, Express, Node.js, npm, Git/Github, Heroku, Trello, Slack</p>
-        <p>This application was created as a group project during UC Berkeley Extension Coding Bootcamp. We are continuing build Native iOS/Android versions of the app using React Native. </p>
+      <div class="card-info gotta-go">
+        <div class="app-info">
+          <p>Drivers for services like Uber or Lyft often need to quick find a restroom in areas they don't know very well. This is where Gotta Go comes in! Users can see nearby spots in list/map view, leave comments, create/update account. 
+          </p>
+          <p>My role in project: <i>Full Stack Developer, Project Manager, Designer</i></p>
+          <p>Technologies/tools used: HTML, CSS, Bloomer, React, Google Maps API, Mongoose, Passport, Express, Node.js, npm, Git/Github, Heroku, Trello, Slack</p>
+          <p>This application was created as a group project during UC Berkeley Extension Coding Bootcamp. I'm currently continue develop Native iOS/Android versions of the app using React Native. </p>
+        </div>
         <div class="links">
           <a href="https://murmuring-basin-97486.herokuapp.com/" target="_blank">Website</a>
           <a href="https://github.com/mford008/gotta-go-react" target="_blank">Github</a>
@@ -101,13 +103,15 @@
     </div>
 
     <div class="w3-card-2">
-      <div id="mart-studio">
-        <img src="assets/images/logo-mart.png" alt="MART studio">
+      <div class="logo-block">
+        <img class="logo-image" src="assets/images/logo-mart.png" alt="MART studio">
       </div>
-      <div class="card-info" style="background-color: #f7f6f6; width: auto; padding-top: 40px">
-        <p>Front end web application created for Mart STUDIO art school. </p>
-        <p>Technologies/tools used: HTML, CSS, Bootstrap 4, Javascript, Git/Github, Github Pages</p>
-        <p>My solo project. Still in development.</p>
+      <div class="card-info" style="background-color: #f7f6f6; padding-top: 40px">
+          <div class="app-info">
+            <p>Website created for Mart STUDIO art school. </p>
+            <p>Technologies/tools used: HTML, CSS, Bootstrap 4, Javascript, Git/Github, Github Pages</p>
+            <p>My solo project from custom design to deployment. Still in development.</p>
+          </div>
          <div class="links">
           <a href="http://martstudioartschool.com/" target="_blank">Website</a>
           <a href="https://github.com/beldrevo/MARTstudio" target="_blank">Github</a>
@@ -116,14 +120,16 @@
     </div>
 
     <div class="w3-card-2">
-      <div id="unmute">
-        <img src="assets/images/Unmute.jpg" alt="Unmute">
+      <div class="logo-block">
+        <img class="logo-image" src="assets/images/Unmute.jpg" alt="Unmute">
       </div>
       <div class="card-info" style="background-color: #e8f3ff;">
-        <p>Have you ever struggle trying to find information about your favorite Music Artist/Band? Bio, upcoming concerts and tickets, Top Songs and Top Albums, social accounts, awards - a lot of resources.
-        </p>
-        <p>We used different types of APIs to collect all this data in one place. This web based application was created as a group project during UC Berkeley Extension Coding Bootcamp. </p>
-        <p>Technologies/tools used: HTML, CSS, Bootstrap 3, jQuery, Ajax, API, Firebase, Javascript, Git/Github, Slack</p>
+        <div class="app-info">
+          <p>Have you ever struggle trying to find your favorite Music Artist/Band info? Bio, upcoming concerts and tickets, Top Songs and Top Albums, social accounts, awards - a lot of resources.
+          </p>
+          <p>We used different types of APIs to collect all this data in one place. This web based application was created as a group project during UC Berkeley Extension Coding Bootcamp. </p>
+          <p>Technologies/tools used: HTML, CSS, Bootstrap 3, jQuery, Ajax, API, Firebase, Javascript, Git/Github, Slack</p>
+        </div>
         <div class="links">
           <a href="" target="_blank">Website</a>
           <a href="https://github.com/mattcarpowich1/Project1" target="_blank">Github</a>
@@ -132,23 +138,26 @@
     </div>
 
     <div class="w3-card-2">
-      <div id="react-scrapper" style="background-color: #524949; color: #f9f9f9">
+      <div class="logo-block" style="background-color: #524949; color: #f9f9f9">
         <h1>News</h1>
         <h1>Scrapper</h1>
       </div>
       <div class="card-info">
-        <p>News Scrapper</p>
-        <p>Full stuck web application, built with MERN (Mongo, Express, React, Node) stuck. It allows search for news, save, comment, remove news articles. It uses NY Times API.</p>
-        <p>Technologies/tools used: HTML, CSS, Bootstrap, React, Mongoose, Express, Node.js, Git/Github, Heroku</p>
+        <div class="app-info">
+          <p>News Scrapper</p>
+          <p>Full stack web application, built with MERN (Mongo, Express, React, Node) stack. It allows search for news, save, comment, remove news articles. It uses NY Times API.</p>
+          <p>Technologies/tools I used: HTML, CSS, Bootstrap, React, Mongoose, Express, Node.js, Git/Github, Heroku</p>
+        </div>
         <div class="links">
           <a href="https://github.com/beldrevo/react-search" target="_blank">Website</a>
           <a href="https://github.com/beldrevo/react-search" target="_blank">Github</a>
-        </div>
+      </div>
       </div>
     </div>
+  </div>
 
+  <div class="games w3-row projects w3-center">
     <h3>Simple funny games :)</h3>
-
     <div id="games">
       <div class="w3-card-4" style="width: 33%;">
         <div id="hangman">
@@ -157,7 +166,7 @@
         <div class="games-card-info">
           <p>Simple Hangman game.</p>
           <p>Created with pure Javascript, HTML and CSS. Inspired by Kids.</p>
-          <div class="links">
+          <div class="game-link">
             <a href="https://beldrevo.github.io/Hangman-Game/" target="_blank">Website</a>
             <a href="https://github.com/beldrevo/Hangman-Game" target="_blank">Github</a>
           </div>
@@ -169,7 +178,7 @@
         <div class="games-card-info">
           <p>Classic Trivia Game. Moon Landing theme.</p>
           <p>Front end web application, built with HTML, CSS, Javascript, jQuery</p>
-          <div class="links">
+          <div class="game-link">
             <a href="https://beldrevo.github.io/TriviaGame/" target="_blank">Website</a>
             <a href="https://github.com/beldrevo/TriviaGame" target="_blank">Github</a>
           </div>
@@ -183,23 +192,15 @@
         </div>
         <div class="games-card-info">
           <p>Simple crystal collector game. Bult with HTML, CSS, Javascript, jQuery</p>
-          <div class="links">
+          <div class="game-link">
             <a href="https://beldrevo.github.io/Crystal-Collector" target="_blank">Website</a>
             <a href="https://github.com/beldrevo/Crystal-Collector" target="_blank">Github</a>
           </div>
         </div>
       </div>
+     </div>
     </div>
    </div>
-  </div>
-</div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
   </div>
 </div>
 
@@ -246,14 +247,11 @@
 </div>
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+<footer id="footer" class="w3-center w3-black w3-opacity w3-hover-opacity-off">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
     <a href="https://github.com/beldrevo"><i class="fa fa-github w3-hover-opacity links"></i></a>
     <a href="https://www.linkedin.com/in/pavel-ch/"><i class="fa fa-linkedin w3-hover-opacity links"></i></a>
-  </div>
-  <div>
-    <p>Created with W3.CSS library</p>
   </div>
 </footer>
 
@@ -275,25 +273,26 @@ function myMap() {
 }
 
 // Change style of navbar on scroll
-window.onscroll = function() {parallax()};
-  parallax() {
+window.onscroll = function() { parallax() };
+  function parallax() {
     var navbar = document.getElementById("myNavbar");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
     } else {
         navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
     }
-}
+  }
+
 
 // Used to toggle the menu on small screens when clicking on the menu button
-toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
+  function toggleFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+      } else {
+          x.className = x.className.replace(" w3-show", "");
+      }
+  }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCtDV0aY7IdfyS0HPw6M0AmJaQe9DPTTY&callback=myMap"></script>
 
