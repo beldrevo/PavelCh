@@ -89,14 +89,14 @@
       </div>
       <div class="card-info gotta-go">
         <div class="app-info">
-          <p>Drivers for services like Uber or Lyft often need to quick find a restroom in areas they don't know very well. This is where Gotta Go comes in! Users can see nearby spots in list/map view, leave comments, create/update account. 
+          <p>Drivers for services like Uber or Lyft often need to quick find a restroom in areas they don't know very well. This is where Gotta Go comes in! Users can see nearby spots in list/map view, leave comments, create/update account.
           </p>
           <p>My role in project: <i>Full Stack Developer, Project Manager, Designer</i></p>
           <p>Technologies/tools we used: HTML, CSS, Bloomer, React, Google Maps API, Mongoose, Passport, Express, Node.js, npm, Git/Github, Heroku, Trello, Slack</p>
           <p>This application was created as a group project during UC Berkeley Extension Coding Bootcamp. I'm currently continue develop Native iOS/Android versions of the app using React Native. </p>
         </div>
         <div class="links">
-          <a href="https://gotta-go.herokuapp.com/landing/map" target="_blank">Live app (resize browser to mobile view)</a>
+          <a href="https://gotta-go.herokuapp.com" target="_blank">Live app (resize browser to mobile view)</a>
           <a href="https://github.com/mford008/gotta-go-react" target="_blank">Source code</a>
         </div>
       </div>
@@ -228,17 +228,17 @@
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: pavelch.js@gmail.com<br>
       </div>
       <p>Invite for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-      <form action="mailto:pavelch.js@gmail.com" method="post" enctype="text/plain">
+      <form id="myForm" action="https://formspree.io/pavelch.js@gmail.com" method="POST" enctype="text/plain">
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
           <div class="w3-half">
             <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
           </div>
           <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            <input class="w3-input w3-border" type="email" placeholder="Email" required name="_replyto">
           </div>
         </div>
         <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
+        <button class="w3-button w3-black w3-right w3-section"  onclick="confirmMessage()" value="Send" type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
       </form>
@@ -292,6 +292,11 @@ window.onscroll = function() { parallax() };
       } else {
           x.className = x.className.replace(" w3-show", "");
       }
+  }
+
+  function confirmMessage() {
+    alert("Message is sent!");
+    document.getElementById("myForm").reset();
   }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCtDV0aY7IdfyS0HPw6M0AmJaQe9DPTTY&callback=myMap"></script>
