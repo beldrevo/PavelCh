@@ -228,17 +228,17 @@
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: pavelch.js@gmail.com<br>
       </div>
       <p>Invite for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-      <form id="myForm" action="https://formspree.io/pavelch.js@gmail.com" method="POST" enctype="text/plain">
+      <form id="myForm" action="https://formspree.io/pavelch.js@gmail.com" method="POST">
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
           <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            <input class="w3-input w3-border" type="text" placeholder="Your name" required name="name">
           </div>
           <div class="w3-half">
-            <input class="w3-input w3-border" type="email" placeholder="Email" required name="_replyto">
+            <input class="w3-input w3-border" type="email" placeholder="Email" required name="email">
           </div>
         </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section"  onclick="confirmMessage()" value="Send" type="submit">
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="message">
+        <button class="w3-button w3-black w3-right w3-section"  onclick="confirmMessage()" type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
       </form>
